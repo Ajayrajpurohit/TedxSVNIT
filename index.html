@@ -74,10 +74,11 @@
 		padding-top: 3px;
 		font-size: 16px;
 	}
+
 </style>
 
 
-<script>
+<!-- <script>
 	var countDownDate = new Date("Sep 2, 2018 09:00:00").getTime();
 
 // Update the count down every 1 second
@@ -102,12 +103,12 @@ var x = setInterval(function() {
     document.getElementById("demo_seconds").innerHTML = seconds;
 }, 1000);
 </script>
-	
+	 -->
 <body>
 	<section id="hero" class="hero-section bg1 bg-cover window-height light-text"> <ul class="socials-nav"> </ul> <div class="heading-block centered-block align-center"> </div> </section>
 
 	<header class="header header-black">
-		<div class="header-wrapper">
+		<div class="header-wrapper nav-down">
 			<div class="container">
 				<div class="col-sm-2 col-xs-12 navigation-header">
 					<a href="index.html" class="logo">
@@ -129,7 +130,13 @@ var x = setInterval(function() {
 							<li class="navigation-item"><a href="sponsors.html" class="navigation-link">Sponsors</a></li>
 							<li class="navigation-item"><a href="schedule.html" class="navigation-link">Schedule</a></li>
 							
-							<li class="navigation-item"><a href="events.html" class="navigation-link">Events</a></li>
+							<li class="navigation-item dropdown">
+								<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Events</a>
+								<ul class="dropdown-menu">
+									<li class="navigation-item"><a href="events.html" class="navigation-link">Pre-Events</a></li>
+									<li class="navigation-item"><a href="events.html" class="navigation-link">Competitions</a></li>
+								</ul>
+							</li>
 							<li class="navigation-item"><a href="team.html" class="navigation-link">Team</a></li>
 							<li class="navigation-item"><a href="https://tedxsvnit.wordpress.com" target="_blank" class="navigation-link">Blog</a></li>
 							
@@ -463,6 +470,51 @@ var x = setInterval(function() {
 	<script type="text/javascript" src="../assets/js/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="../assets/js/jquery.mousewheel-3.0.6.min.js"></script>
 	<script type="text/javascript" src="../assets/js/bxslider.js"></script>
+	
+	<script>
+				// Hide Header on on scroll down
+		var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('header-wrapper').outerHeight();
+
+		$(window).scroll(function(event){
+			didScroll = true;
+		});
+
+		setInterval(function() {
+			if (didScroll) {
+				hasScrolled();
+				didScroll = false;
+			}
+		}, 250);
+
+		function hasScrolled() {
+			// console.log('scrolled');
+			var st = $(this).scrollTop();
+			
+			// Make sure they scroll more than delta
+			if(Math.abs(lastScrollTop - st) <= delta)
+				return;
+			
+			// If they scrolled down and are past the navbar, add class .nav-up.
+			// This is necessary so you never see what is "behind" the navbar.
+			if (st > lastScrollTop && st > navbarHeight){
+				// Scroll Down
+				console.log('scroll down');
+				$('.header.fixed .header-wrapper').fadeOut(100);
+			} else {
+				// Scroll Up
+				console.log('scroll up');
+				$('.header.fixed .header-wrapper').fadeIn(100);
+				
+			}
+			var temp = st <= 0 ? 0 : st;
+			st = temp;
+			lastScrollTop = st;
+		}
+	</script>
+
 </body>
 
 
