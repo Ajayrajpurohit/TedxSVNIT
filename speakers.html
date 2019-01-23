@@ -31,6 +31,58 @@
 			<script src="assets/js/html5shiv.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
+
+		<style>
+			.hvrbox * {
+				box-sizing: border-box;
+			}
+			.hvrbox {
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+				max-width: 100%;
+				height: auto;
+			}
+			.hvrbox img {
+				max-width: 100%;
+			}
+			.hvrbox .hvrbox-layer_bottom {
+				display: block;
+			}
+			.hvrbox .hvrbox-layer_top {
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.6);
+				color: #fff;
+				padding: 15px;
+				-moz-transition: all 0.4s ease-in-out 0s;
+				-webkit-transition: all 0.4s ease-in-out 0s;
+				-ms-transition: all 0.4s ease-in-out 0s;
+				transition: all 0.4s ease-in-out 0s;
+			}
+			.hvrbox:hover .hvrbox-layer_top,
+			.hvrbox.active .hvrbox-layer_top {
+				opacity: 1;
+			}
+			.hvrbox .hvrbox-text {
+				text-align: center;
+				font-size: 16px;
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-moz-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -93,12 +145,26 @@
 
 </p>				</div>
 <div class="col-sm-5 img-column">
-								<img src="assets/img/speakers/anil.jpg" alt="" class="img-responsive" />
+		<div class="hvrbox">
+				<img src="assets/img/speakers/anil.jpg" alt="" class="img-responsive" />
+			<div class="hvrbox-layer_top">
+				<div class="hvrbox-text">
+						An Indian Bollywood film actor who has worked in films like PK, Singh is Bling, Raees and Hasee toh Phasee, Anil Charanjeett is a talented artist who always gives 100% on screen . 
+				</div>
+			</div>
+		</div>								
 							</div>
 							<hr>
 					<div id="horizontal_tab1" class="tab-pane active in">
 							<div class="col-sm-5 img-column">
-								<img src="assets/img/speakers/Anjan-Prakash-2-768x699.jpg" alt="" class="img-responsive" />
+									<div class="hvrbox">
+										<img src="assets/img/speakers/Anjan-Prakash-2-768x699.jpg" alt="" class="img-responsive" />
+										<div class="hvrbox-layer_top">
+											<div class="hvrbox-text">
+													Anjan Prakash started her career in Ogilvy Advertising and then co-founded Brown Skins – a film production house in Mumbai which produced several commercials for national and international clients.
+											</div>
+										</div>
+									</div>	
 							</div>
 							<div class="col-sm-7 align-left">
 								<h6> Anjan Prakash</h6>
@@ -117,14 +183,29 @@
 							</div>
 
 							<div class="col-sm-5 img-column">
-								<img src="assets/img/speakers/DSC_3180.jpg" alt="" class="img-responsive" />
+									<div class="hvrbox">
+										<img src="assets/img/speakers/DSC_3180.jpg" alt="" class="img-responsive" />
+											<div class="hvrbox-layer_top">
+												<div class="hvrbox-text">
+														Nikhil Malhotra is the creator of Maker’s Lab, a unique Thin-q-bator space within TechMahindra with over 17 years of experience in a variety of technology domains. 
+												</div>
+											</div>
+									</div>	
+								
 							</div>
 						</div>
 	<hr>
 			    
 			    <div id="horizontal_tab3">
 							<div class="col-sm-5 img-column">
-								<img src="assets/img/speakers/file4.jpeg" alt="" class="img-responsive" />
+									<div class="hvrbox">
+										<img src="assets/img/speakers/file4.jpeg" alt="" class="img-responsive" />
+										<div class="hvrbox-layer_top">
+											<div class="hvrbox-text">
+													A backpacker, a conservationist, an educator and a marathon runner. While working at Mahindra Susten- Mahindra’s clean technology arm- Surmai Kaushik got the greatest opportunity of her life- to go to Antarctica with Robert Swann.
+											</div>
+										</div>
+									</div>								
 							</div>
 							<div class="col-sm-7 align-left">
 								<h6>Surmai Kaushik</h6>
@@ -141,11 +222,18 @@
 							
 							<div class="col-sm-7 align-left">
 								<h6>Jitendra Singh</h6>
-								<p>Jitendra Singh is a security guard at SVNIT, Surat. He once had a dream of joining the Indian Defence Services but couldn’t due to him lacking in physical requirements. This  however, did not bog Singh down; instead it inspired him to do something great in another way- he decide to honour those people who have joined and sacrificed their lives for the country. He has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
+								<p>Jitendra Singh has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
 
 </p>				</div>
 <div class="col-sm-5 img-column">
-								<img src="assets/img/speakers/jitendra.jpg" alt="" class="img-responsive" />
+		<div class="hvrbox">
+				<img src="assets/img/speakers/jitendra.jpg" alt="" class="img-responsive" />
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text">
+							Jitendra Singh is a security guard at SVNIT, Surat.  He has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
+					</div>
+				</div>
+			</div>								
 							</div>
 				
 				
@@ -155,7 +243,15 @@
 	<hr>
 			    <div id="horizontal_tab3">
 							<div class="col-sm-5 img-column">
-								<img src="assets/img/speakers/pratul.jpg" alt="" class="img-responsive" />
+									<div class="hvrbox">
+										<img src="assets/img/speakers/pratul.jpg" alt="" class="img-responsive" />
+
+											<div class="hvrbox-layer_top">
+												<div class="hvrbox-text">
+														A 24- year old Musician/Astrologer/Mythologist hailing from Agra, Pratul has deep interest towards science, arts, culture, philosophy and there is nothing called "hobby" in his life, there is always a "passion" and in some cases, it is an obsession.
+												</div>
+											</div>
+									</div>	
 							</div>
 							<div class="col-sm-7 align-left">
 								<h6>Pratul Vishera</h6>
@@ -184,7 +280,15 @@
 </p>				</div>
 				
 				<div class="col-sm-5 img-column">
+						<div class="hvrbox">
 								<img src="assets/img/speakers/dhiraj.jpg" alt="" class="img-responsive" />
+
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">
+												Passionate about safety of health and environment, Dhiraj Jalan, the young entrepreneur, has taken multiple initiatives to help address the issues of adulteration and toxicity.
+										</div>
+									</div>
+							</div>	
 							</div>
 
 	    </div>
@@ -240,6 +344,23 @@
 		<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
 		<script type="text/javascript" src="assets/js/modal-box.js"></script>
 		<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+		<script>
+			$(function() {
+				var mobileScreenTreshold = 1024;
+				$(".hvrbox").click(function(e) {
+					if($(window).width() <= mobileScreenTreshold) {
+						if($(this).hasClass("active")) {
+							$(this).removeClass("active");
+						} else {
+							e.preventDefault();
+							$(this).addClass("active");
+						}
+					} else {
+						$(this).removeClass("active");
+					}
+				});
+			});
+		</script>
 
 	</body>
 
