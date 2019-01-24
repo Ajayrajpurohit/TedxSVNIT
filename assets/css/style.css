@@ -29,13 +29,14 @@
   font-style: normal;
 }
 .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  border-radius: 10px;
+ 
+  font-size: auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 25px 2px;
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -1784,6 +1785,8 @@
 }
 .fa-facebook-official:before {
   content: "\f230";
+	
+	
 }
 .fa-pinterest-p:before {
   content: "\f231";
@@ -5104,6 +5107,9 @@ button[type="submit"] .loading {
   }
 }
 @media (max-width: 480px) {
+	a{
+		align-content: center;
+	}
   .socials-nav-item {
     margin: 0 6px;
   }
@@ -6047,10 +6053,60 @@ button[type="submit"] .loading {
   z-index: 500;
 }
 .header.header-black .header-wrapper {
+	width: 100wh;
+	height: 15vh;
+	color: #fff;
+	background: linear-gradient(-45deg,#dc2424, #4a569d);
+	background-size: 200% 200%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+
+/*Nav Gradient*/
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.header.header-blue .header-wrapper {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background-color: #262627;
+  background-color: skyblue;
 }
 .header.header-black .navigation-link {
   color: #ffffff;
@@ -6450,7 +6506,7 @@ button[type="submit"] .loading {
 .footer {
   padding: 50px 0 0;
   color: #ffffff;
-  background-color: #262627;
+  background: linear-gradient(to right, #232526, #414345);
 }
 .footer-base {
   padding: 40px 0 30px;
@@ -7075,5 +7131,7 @@ button[type="submit"] .loading {
     align-items: center;
 }
 
-
+}
+.fa:hover {
+    opacity: 0.7;
 }
