@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.js"></script>
 		<script src="assets/js/respond.min.js"></script>
@@ -74,11 +74,16 @@
 		padding-top: 3px;
 		font-size: 16px;
 	}
-
+		
+  
+		.fa-plus{
+			margin: 0px;
+			
+		}
 </style>
 
 
-<!-- <script>
+<script>
 	var countDownDate = new Date("Sep 2, 2018 09:00:00").getTime();
 
 // Update the count down every 1 second
@@ -102,13 +107,15 @@ var x = setInterval(function() {
     document.getElementById("demo_minutes").innerHTML = minutes;
     document.getElementById("demo_seconds").innerHTML = seconds;
 }, 1000);
+	
+
 </script>
-	 -->
+	
 <body>
-	<section id="hero" class="hero-section bg1 bg-cover window-height light-text"> <ul class="socials-nav"> </ul> <div class="heading-block centered-block align-center"> </div> </section>
+	
 
 	<header class="header header-black">
-		<div class="header-wrapper nav-down">
+		<div class="header-wrapper">
 			<div class="container">
 				<div class="col-sm-2 col-xs-12 navigation-header">
 					<a href="index.html" class="logo">
@@ -143,7 +150,11 @@ var x = setInterval(function() {
 							
 
 						</ul>
-						<a href="register.html" class="pull-right buy-btn">Registration Closed!</a>
+						<a href="https://www.instagram.com/tedxsvnit/"><span class="fa fa-instagram pull-right" style="background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  color: white; font-size: 30px; padding: 5px;"></span></a>
+						<a href="https://www.facebook.com/tedxsvnit/"><span class="fa fa-facebook pull-right" style="background: #3B5998;
+	color: white; font-size: 30px; padding: 5px;"></span></a>
+<!--						<a href="register.html" class="pull-right buy-btn">Registration Closed!</a>-->
 
 					</div>
 				</div>
@@ -195,16 +206,16 @@ var x = setInterval(function() {
 			<div class="tabs-wrapper tabs-horizontal">
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="#horizontal_tab1" data-toggle="tab">
-						<h6 class="heading-alt"><span class="fa fa-rocket"></span> TED</h6>
+						<h6 class="heading-alt">TED</h6>
 					</a></li>
 					<li><a href="#horizontal_tab2" data-toggle="tab">
-						<h6 class="heading-alt"><span class="fa fa-rocket"></span> TEDx</h6>
+						<h6 class="heading-alt">TEDx</h6>
 					</a></li>
 					<li><a href="#horizontal_tab3" data-toggle="tab">
-						<h6 class="heading-alt"><span class="fa fa-rocket"></span> TEDxSVNIT</h6>
+						<h6 class="heading-alt">TEDxSVNIT</h6>
 					</a></li>
 					<li><a href="#horizontal_tab4" data-toggle="tab">
-						<h6 class="heading-alt"><span class="fa fa-rocket"></span> Theme</h6>
+						<h6 class="heading-alt">Theme</h6>
 					</a></li>
 				</ul>
 
@@ -293,7 +304,7 @@ var x = setInterval(function() {
 				<div class="col-sm-6">
 					<div class="panel-group panel-group-alt" id="accordion">
 						<div class="panel-body">
-							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false"><span class="fa fa-plus"></span> Who can participate?</a>
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#panel1" aria-expanded="false"><span class="fa fa-plus" style="padding: 0px;"></span> Who can participate?</a>
 							<div id="panel1" class="panel-collapse collapse ">
 								<div class="panel-body">
 
@@ -470,51 +481,6 @@ var x = setInterval(function() {
 	<script type="text/javascript" src="../assets/js/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="../assets/js/jquery.mousewheel-3.0.6.min.js"></script>
 	<script type="text/javascript" src="../assets/js/bxslider.js"></script>
-	
-	<script>
-				// Hide Header on on scroll down
-		var didScroll;
-		var lastScrollTop = 0;
-		var delta = 5;
-		var navbarHeight = $('header-wrapper').outerHeight();
-
-		$(window).scroll(function(event){
-			didScroll = true;
-		});
-
-		setInterval(function() {
-			if (didScroll) {
-				hasScrolled();
-				didScroll = false;
-			}
-		}, 250);
-
-		function hasScrolled() {
-			// console.log('scrolled');
-			var st = $(this).scrollTop();
-			
-			// Make sure they scroll more than delta
-			if(Math.abs(lastScrollTop - st) <= delta)
-				return;
-			
-			// If they scrolled down and are past the navbar, add class .nav-up.
-			// This is necessary so you never see what is "behind" the navbar.
-			if (st > lastScrollTop && st > navbarHeight){
-				// Scroll Down
-				console.log('scroll down');
-				$('.header.fixed .header-wrapper').fadeOut(100);
-			} else {
-				// Scroll Up
-				console.log('scroll up');
-				$('.header.fixed .header-wrapper').fadeIn(100);
-				
-			}
-			var temp = st <= 0 ? 0 : st;
-			st = temp;
-			lastScrollTop = st;
-		}
-	</script>
-
 </body>
 
 

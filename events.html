@@ -39,11 +39,89 @@
     <link rel="stylesheet" href="assets/css/frst-timeline-style-12.css">
     <!-- Resource style -->
     <script src="assets/js/modernizr.js"></script>
-
+	
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+<style>
+	/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+	
+	
+			.hvrbox * {
+				box-sizing: border-box;
+			}
+			.hvrbox {
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+				max-width: 100%;
+				height: auto;
+			}
+			.hvrbox img {
+				max-width: 100%;
+			}
+			.hvrbox .hvrbox-layer_bottom {
+				display: block;
+			}
+			.hvrbox .hvrbox-layer_top {
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.6);
+				color: #fff;
+				padding: 15px;
+				-moz-transition: all 0.4s ease-in-out 0s;
+				-webkit-transition: all 0.4s ease-in-out 0s;
+				-ms-transition: all 0.4s ease-in-out 0s;
+				transition: all 0.4s ease-in-out 0s;
+			}
+			.hvrbox:hover .hvrbox-layer_top,
+			.hvrbox.active .hvrbox-layer_top {
+				opacity: 1;
+			}
+			.hvrbox .hvrbox-text {
+				text-align: center;
+				font-size: 16px;
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-moz-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+		
+	</style>
 </head>
 
 <body>
@@ -80,10 +158,12 @@
 							<li class="navigation-item"><a href="team.html" class="navigation-link">Team</a></li>
 							<li class="navigation-item"><a href="https://tedxsvnit.wordpress.com" target="_blank" class="navigation-link">Blog</a></li>
 							
-							
-								
 						</ul>
- <a href="register.html" class="pull-right buy-btn">Registration Closed!</a>
+						<a href="https://www.instagram.com/tedxsvnit/"><span class="fa fa-instagram pull-right" style="background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  color: white; font-size: 30px; padding: 5px;"></span></a>
+						<a href="https://www.facebook.com/tedxsvnit/"><span class="fa fa-facebook pull-right" style="background: #3B5998;
+	color: white; font-size: 30px; padding: 5px;"></span></a>
+<!-- <a href="register.html" class="pull-right buy-btn">Registration Closed!</a>-->
 			
 					</div>
 				</div>
@@ -92,12 +172,23 @@
 </header>
 
     <section id="involve" class="section align-center">
-		<div class="container">
+		 <row>
+			<div class="col-md-3"></div>
+				<div class="col-md-6">
+					
+					<button type="button" class="tablink" onclick="openPage('events', this, 'black')" id="defaultOpen">Events</button>
+					
+					<button type="button" class="tablink" onclick="openPage('competitions', this, 'black')" >Competitions</button></div>
+				
+				<div class="col-md-3"></div>
+			</row>
+		<div class="tabcontent" id="competitions">
 			<!-- <span class="icon section-icon icon-shopping-04"></span> -->
 			<h3><span class="highlight">COMPETITIONS</span></h3>
-			<h5><span class="highlight" style="color: black;">Enteries are closed now. Winners will be announced on <span style="color: #e62b1e;">Sept 26, 2018.</span></span></h5><br>
+			<h5><span class="highlight" style="color: black;">Last Year Competitions (Sept. 2018)</span></h5><br>
 			<br>
 			<div class="container">
+				
 			<!-- <span class="icon section-icon icon-shopping-04"></span> -->
  				<div class="col-sm-4">
 					<div class="package-column special-column" style="min-height: 450px; max-height: 550px">
@@ -107,6 +198,11 @@
 							<!-- </div> -->
 						<div class="package-detail">
 							<a href="#"><img src="assets/img/SHORT.jpg"></a>
+							<div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+									 
+								</div>
+							</div>
 						</div>
 						
 					</div>
@@ -116,7 +212,11 @@
 						
 						<div class="package-detail">
 							<a href="#"><img src="assets/img/photography.jpg"></a>
-							
+							<div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+									 
+								</div>
+							</div>
 						</div>
 						<!-- <a href="https://tedxsvnit.typeform.com/to/RvNlLv" target="_blank" class="btn btn-lg btn-outline-clr">Register here</a> -->
 					</div>
@@ -127,14 +227,84 @@
 						
 						<div class="package-detail">
 							<a href="#"><img src="assets/img/ART.jpg"></a>
-							
+							<div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+									 
+								</div>
+							</div>
 						</div>
 						<!-- <a href="https://tedxsvnit.typeform.com/to/RvNlLv" target="_blank" class="btn btn-lg btn-outline-clr">Register here</a> -->
 					</div>
 				</div>
 
         </div>
- 			        </div></section>
+ 			        </div>
+		 <div class="tabcontent" id="events">
+			 <h3><span class="highlight">EVENTS</span></h3>
+			<h5><span class="highlight" style="color: black;">Last Year Events (Sept. 2018)</span></h5><br>
+			<br>
+			 <div class="container">
+			<!-- <span class="icon section-icon icon-shopping-04"></span> -->
+ 				<div class="col-sm-4">
+					<div class="package-column special-column hvrbox" style="min-height: 450px; max-height: 550px">
+						<!-- <span class="sale-label uppercase">Hot!</span> -->
+						
+						<!-- <div class="package-price"> -->
+							<!-- </div> -->
+						<div class="package-detail">
+							<a href="#"><img src="assets/img/pre/pe1.JPG"></a>
+							<div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+									 The Logical Artist :
+									The logical artist was a rather amusing way to prove that creativity and logistics go side by side.
+									TEDxSVNIT held the event in various colleges across the city and forced the participants to actually stop and think .
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="package-column special-column hvrbox" style="min-height: 450px; max-height: 550px">
+						
+						<div class="package-detail">
+							<a href="#"><img src="assets/img/pre/pe2.JPG"></a>
+							<div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+									 Open Mic :
+									Open 'Mic'haelangelo is one of the ways in which an artist shares his/her idea in the form of storytelling , stand up comedy or poetry. The idea was to let people get into their comfort art zones and let others feel what they feel.
+								</div>
+							</div>
+							
+						</div>
+						<!-- <a href="https://tedxsvnit.typeform.com/to/RvNlLv" target="_blank" class="btn btn-lg btn-outline-clr">Register here</a> -->
+					</div>
+				</div>
+
+ 				<div class="col-sm-4">
+					<div class="package-column special-column hvrbox" style="min-height: 450px; max-height: 550px">
+						
+						<div class="package-detail">
+							<a href="#"><img src="assets/img/pre/pe3.JPG"></a>
+							<div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+									 Human Library :
+									As they say , every book has a story inside . 
+									Similarly, every human has a story to tell and this paved the road towards rhe concept of 'human library' 
+									TEDxSVNIT held the human library and witnessed people throwing light across various new ideas and hence , serve towards the glorification of TED's Moto , Ideas worth spreading.
+								</div>
+							</div>
+							
+						</div>
+						
+						<!-- <a href="https://tedxsvnit.typeform.com/to/RvNlLv" target="_blank" class="btn btn-lg btn-outline-clr">Register here</a> -->
+					</div>
+				</div>
+
+			 </div>
+		 </div>
+	
+	</section>
 
 
 <section class="footer" id="contact">
@@ -202,7 +372,26 @@
              });
          })(jQuery);
      
+
+         
+         function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
      </script>
+    
      <!-- Resource jQuery -->
 
 </body>
