@@ -6056,6 +6056,7 @@ button[type="submit"] .loading {
 	width: 100wh;
 	height: 15vh;
 	color: #fff;
+	
 	background: linear-gradient(-45deg,#dc2424, #4a569d);
 	background-size: 200% 200%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -6268,7 +6269,7 @@ button[type="submit"] .loading {
 }
 .dropdown-menu .navigation-link {
   padding: 15px 40px;
-  font-weight: 700;
+  font-weight: 800;
   color: #262627;
   border: none;
 }
@@ -6506,7 +6507,8 @@ button[type="submit"] .loading {
 .footer {
   padding: 50px 0 0;
   color: #ffffff;
-  background: linear-gradient(to right, #232526, #414345);
+/*  background: linear-gradient(to right, #232526, #414345);*/
+	 background: linear-gradient(-45deg,#dc2424, #4a569d);
 }
 .footer-base {
   padding: 40px 0 30px;
