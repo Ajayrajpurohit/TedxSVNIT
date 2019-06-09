@@ -137,21 +137,11 @@
 }
 	</style>
 <style>
-	.hero-image {
-  max-width: 100%; 
-  width: 800px;
-  margin: auto;
-}
-
-.hero-image::after {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #c31432 100%);
-  margin-top: -150px;
-  height: 150px;
-  width: 100%;
-  content: '';
-}
+	.carousel-item > a > img {
+		height: 70vh;
+		width: 80vh;
+	}
+	
 	</style>
 <script>
 	var countDownDate = new Date("Sep 2, 2018 09:00:00").getTime();
@@ -352,80 +342,71 @@ var x = setInterval(function() {
 			</div>
 		</section>
 	
-	<section class="section">
+	<section class="section"  style="background-image: url(assets/img/moments/44282140044_d5e3dc59dc_o.jpg); background-size: cover;">
 			
 			<div class="container">
 				<hr>
 				<hr><br>
-				<div class="align-left"><h4>Voices of TEDxSVNIT</h4></div>
+				<div class="align-left"><h3>Voices of TEDxSVNIT</h3></div>
 				<hr><hr><br><br><br>
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-				 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-				 <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-				 <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-				 <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-				 
-			  </ol>
+			  
 			  <div class="carousel-inner">
 				 <div class="carousel-item active">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/anjan.jpg" alt="...">
-				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Anjan Prakash</h5>
-					  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=LlJZNYZQndw"><p>Why borrowing Nature’s recipes can lead to a sustainable world?</p></a>
+					 <a href="https://www.youtube.com/watch?v=LlJZNYZQndw"><img class="d-block w-100" src="assets/img/speakers/carousel/anjan.jpg" alt="..."></a>
+				  <div class="carousel-caption d-none d-md-block"`>
+					 <h4 style="font-weight: 600;">Anjan Prakash</h4>
+					  <p>Why borrowing Nature’s recipes can lead to a sustainable world?</p>
 				  </div>
 				</div>
 				  
 				  <div class="carousel-item">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/nikhil.jpg" alt="...">
+					  <a href="https://www.youtube.com/watch?v=e1ROG9VUNVM"><img class="d-block w-100" src="assets/img/speakers/carousel/nikhil.jpg" alt="..."></a>
 				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Nikhil Malhotra</h5>
-					  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=e1ROG9VUNVM"><p>It's the COURAGE that drives INNOVATION</p></a>
+					 <h4 style="font-weight: 600;">Nikhil Malhotra</h4>
+					  <p>It's the COURAGE that drives INNOVATION</p>
 				  </div>
 				</div>
 				  
 				  <div class="carousel-item">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/anill.jpg" alt="...">
+					  <a href="https://www.youtube.com/watch?v=qe-iH4rfVGg"><img class="d-block w-100" src="assets/img/speakers/carousel/anill.jpg" alt="..."></a>
 				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Anil Charanjeett</h5>
-					  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=qe-iH4rfVGg"><p>Affirmations</p></a>
+					 <h4 style="font-weight: 600;">Anil Charanjeett</h4>
+					  <p>Affirmations</p>
 				  </div>
 				</div>
 				  
 				  <div class="carousel-item">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/surmai.jpg" alt="...">
+				  <a href="https://www.youtube.com/watch?v=upqCz0mJ5i0"><img class="d-block w-100" src="assets/img/speakers/carousel/surmai.jpg" alt="..."></a>
 				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Surmai Kaushik</h5>
-					  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=upqCz0mJ5i0"><p>Silent Scream of Antartica</p></a>
+					 <h4 style="font-weight: 600;">Surmai Kaushik</h4>
+					  <p>Silent Scream of Antartica</p>
 				  </div>
 				</div>
 				  
 				  <div class="carousel-item">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/jitendra.jpg" alt="...">
+					  <a href="https://www.youtube.com/watch?v=cVERLxIGrcU"><img class="d-block w-100" src="assets/img/speakers/carousel/jitendra.jpg" alt="..."></a>
 				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Jitendra Singh</h5>
-					  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=cVERLxIGrcU"><p>Honouring Pride and Sacrifice: A letter at a Time</p></a>
+					 <h4 style="font-weight: 600;">Jitendra Singh</h4>
+					  <p>Honouring Pride and Sacrifice: A letter at a Time</p>
 				  </div>
 				</div>
 				  
 				  <div class="carousel-item">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/pratual.jpg" alt="...">
+					  <a href="https://www.youtube.com/watch?v=Ajo4-aGgSdA"><img class="d-block w-100" src="assets/img/speakers/carousel/pratual.jpg" alt="..."></a>
 				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Pratul Vishera</h5>
-					  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=Ajo4-aGgSdA"><p>4 Truth about Myths of Astrology</p></a>
+					 <h4 style="font-weight: 600;">Pratul Vishera</h4>
+					  <p>4 Truth about Myths of Astrology</p>
 				  </div>
 				</div>
 				  
 				  <div class="carousel-item">
-				  <img class="d-block w-100" src="assets/img/speakers/carousel/dhiraj.jpg" alt="...">
+				  <a><img class="d-block w-100" src="assets/img/speakers/carousel/dhiraj.jpg" alt="..."></a>
 				  <div class="carousel-caption d-none d-md-block">
-					 <h5>Dhiraj Jalan</h5>
-					  <a style="text-decoration: none;" href="#"><p></p></a>
+					 <h4 style="font-weight: 600;">Dhiraj Jalan</h4>
+					  <p></p>
 				  </div>
 				</div>
 				 
@@ -474,7 +455,7 @@ var x = setInterval(function() {
 	<br>
 	<br>
 	<br>
-		<section class="section">
+		<section class="section" style="background-image: url(assets/img/moments/45001011581_b2daa9b68e_o.jpg); background-size: cover;">
 			
 			<div class="container">
 				<hr>
@@ -672,14 +653,14 @@ var x = setInterval(function() {
 			<div class="container">
 
 
-				<div class="col-md-4">
-					<ul class="footer-nav align-center">
+				<div class="col-md-4 align-center">
+					<ul class="footer-nav">
 						<li class="footer-nav-item" style="text-align: center"><a href="mailto:contact@tedxsvnit.in" target="_top">contact@tedxsvnit.in</a></li><br>
 						<li class="footer-nav-item" style="text-align: center">Phone: +91-7599416785</li>
 					</ul>
 				</div>
-				<div class="col-md-4">
-					<ul class="align-center">
+				<div class="col-md-4 align-center">
+					<ul class="">
 							<li class="socials-nav-item"><a href="https://www.twitter.com/tedxsvnit" target="_blank"><span class="fa fa-twitter"></span></a></li>
 							<li class="socials-nav-item"><a href="https://www.facebook.com/tedxsvnit/" target="_blank"><span class="fa fa-facebook"></span></a></li>
 							<li class="socials-nav-item"><a href="https://www.instagram.com/tedxsvnit/" target="_blank"><span class="fa fa-instagram"></span></a></li>
