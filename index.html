@@ -104,7 +104,7 @@
 .flexbox .item {
 	padding: 2px;
   position: relative;
-  width: 33.33%;
+  width: 33%;
 }
 .flexbox .item img {
   width: 100%;
@@ -141,7 +141,9 @@
 		height: 70vh;
 		width: 80vh;
 	}
-	
+ .btn > a:hover {
+        color: white;
+    }
 </style>
 	
 <script>
@@ -199,7 +201,8 @@ var x = setInterval(function() {
 <!--							<li class="navigation-item"><a href="schedule.html" class="navigation-link">Schedule</a></li>-->
 							<li class="navigation-item"><a href="pre-events.html" class="navigation-link">Pre-events</a></li>
 							<li class="navigation-item"><a href="events.html" class="navigation-link">Competitions</a></li>
-							
+							<li class="navigation-item"><a class="navigation-link" href="team2.html">Team</a></li>
+<!--
 							<li class="dropdown navigation-item">
 							  <a class="dropdown-toggle navigation-link" data-toggle="dropdown" href="#">Team
 							  </a>
@@ -208,6 +211,7 @@ var x = setInterval(function() {
 								 <li class="navigation-item"><a class="navigation-link" href="team.html">2018</a></li>
 							  </ul>
 							</li>
+-->
 							<li class="navigation-item"><a href="https://tedxsvnit.wordpress.com" target="_blank" class="navigation-link">Blog</a></li>
 							
 							
@@ -258,7 +262,7 @@ var x = setInterval(function() {
 
 
 								<h3 class="package-title" style="font-family: 'Roboto', Arial, sans-serif;">Tickets Available!!<br><span style="font-weight: 300;"></span></h3><br>
-								<button type="button" class="btn btn-lg btn-outline-clr" data-toggle="modal" data-target="#myModal">Click Here!!</button>
+								<div class="btn btn-lg btn-outline-clr text-center"><a style="text-decoration: none; hover: wh" data-toggle="modal" data-target="#myModal">Click Here!!</a></div>
 			
 <!--			<a href="https://forms.gle/d2SAMn63TMjnD5raA" class="btn btn-lg btn-outline-clr">Click Here!</a>-->
 							</div>
@@ -373,7 +377,7 @@ var x = setInterval(function() {
 	<section class="section"> <!--Notification Panel-->
 		<div class="container">
 			<hr><hr>
-			<div class="align-left"><h3>LIVE Events</h3></div>
+			<div class="align-left"><h4 style="font-weight: 200;">LIVE Events</h4></div>
 			<hr><hr><br><br>
 			
 			<div class="panel-group">
@@ -567,7 +571,7 @@ var x = setInterval(function() {
 			<div class="container">
 				<hr>
 				<hr><br>
-				<div class="align-left"><h4>Glimpse of TEDxSVNIT</h4></div>
+				<div class="align-left"><h4 style="font-weight: 200;">Glimpse of TEDxSVNIT</h4></div>
 				<hr><hr><br><br><br>
 				<div class="flexbox">
 				  <div class="item">
