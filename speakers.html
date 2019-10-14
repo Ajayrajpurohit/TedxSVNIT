@@ -1,511 +1,585 @@
-	<!DOCTYPE html>
-	<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-	<head>
+<head>
 
-		<meta charset="utf-8">
-		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="200x200">
-		<title>TEDxSVNIT | Speakers</title>
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="200x200">
+	<title>TEDxSVNIT | Speakers</title>
 
-		<meta name="description" content="TEDxSVNIT | Ideas Worth Spreading.">
-		<meta name="keywords" content="Ted, TEDx, TEDxSVNIT, Ideas">
-		<meta name="author" content="TEDxSVNIT">
+	<meta name="description" content="TEDxSVNIT | Ideas Worth Spreading.">
+	<meta name="keywords" content="Ted, TEDx, TEDxSVNIT, Ideas">
+	<meta name="author" content="TEDxSVNIT">
 
-	<meta property="og:type"               content="EVENT" />
-	<meta property="og:title"              content="TEDxSVNIT | Ideas Worth Spreading" />
-	<meta property="og:description"        content="An independently organised TEDx event operated under license from TED" />
-	<meta property="og:image"              content="assets/img/backgrounds/bg1.jpg" />
-		<meta name="twitter:image" content="assets/img/backgrounds/bg1.jpg" />
+<meta property="og:type"               content="EVENT" />
+<meta property="og:title"              content="TEDxSVNIT | Ideas Worth Spreading" />
+<meta property="og:description"        content="An independently organised TEDx event operated under license from TED" />
+<meta property="og:image"              content="assets/img/backgrounds/bg1.jpg" />
+	<meta name="twitter:image" content="assets/img/backgrounds/bg1.jpg" />
 
-		<link rel="shortcut icon" href="assets/img/favicon.ico">
-		<link rel="apple-touch-icon" href="assets/img/favicon.ico">
-		<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.ico">
-		<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 
-		<style>
+	<style>
+		
+		.hvrbox * {
+			box-sizing: border-box;
+		}
+		.hvrbox {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			max-width: 100%;
+			height: auto;
+		}
+		.hvrbox img {
+			max-width: 100%;
+		}
+		.hvrbox .hvrbox-layer_bottom {
+			display: block;
+		}
+		.hvrbox .hvrbox-layer_top {
+			display: none;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.6);
+			color: #fff;
+			padding: 15px;
+			-moz-transition: all 0.4s ease-in-out 0s;
+			-webkit-transition: all 0.4s ease-in-out 0s;
+			-ms-transition: all 0.4s ease-in-out 0s;
+			transition: all 0.4s ease-in-out 0s;
+		}
+		.hvrbox:hover .hvrbox-layer_top,
+		.hvrbox.active .hvrbox-layer_top {
+			opacity: 1;
+		}
+		.hvrbox .hvrbox-text {
 			
-			.hvrbox * {
-				box-sizing: border-box;
-			}
-			.hvrbox {
-				position: relative;
-				display: inline-block;
-				overflow: hidden;
-				max-width: 100%;
-				height: auto;
-			}
-			.hvrbox img {
-				max-width: 100%;
-			}
-			.hvrbox .hvrbox-layer_bottom {
-				display: block;
-			}
-			.hvrbox .hvrbox-layer_top {
-				display: none;
-				opacity: 0;
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(0, 0, 0, 0.6);
-				color: #fff;
-				padding: 15px;
-				-moz-transition: all 0.4s ease-in-out 0s;
-				-webkit-transition: all 0.4s ease-in-out 0s;
-				-ms-transition: all 0.4s ease-in-out 0s;
-				transition: all 0.4s ease-in-out 0s;
-			}
-			.hvrbox:hover .hvrbox-layer_top,
-			.hvrbox.active .hvrbox-layer_top {
-				opacity: 1;
-			}
-			.hvrbox .hvrbox-text {
-				
-				text-align: center;
-				font-size: 16px;
-				display: inline-block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				-moz-transform: translate(-50%, -50%);
-				-webkit-transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-			}
-            
-            
-		</style>
-	</head>
+			text-align: center;
+			font-size: 16px;
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		
+		
+	</style>
+</head>
 
-	<body>
+<body>
 
 
 
 
-		<header class="header header-black">
-			<div class="header-wrapper">
-				<div class="container">
-					<div class="col-sm-2 col-xs-12 navigation-header">
-						<a href="index.html" class="logo">
-							<img src="assets/img/1.png" alt="TEDxSVNIT" width="179" height="65" class="retina-hide">
-							<img src="assets/img/1.png" alt="TEDxSVNIT" width="179" height="65" class="retina-show">
-						</a>
-						<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
+	<header class="header header-black">
+		<div class="header-wrapper">
+			<div class="container">
+				<div class="col-sm-2 col-xs-12 navigation-header">
+					<a href="index.html" class="logo">
+						<img src="assets/img/1.png" alt="TEDxSVNIT" width="179" height="65" class="retina-hide">
+						<img src="assets/img/1.png" alt="TEDxSVNIT" width="179" height="65" class="retina-show">
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-					<div class="col-sm-10 col-xs-12 navigation-container">
-						<div id="navigation" class="navbar-collapse collapse">
-							<ul class="navigation-list pull-left light-text">
-								<li class="navigation-item"><a href="index.html" class="navigation-link">About</a></li>
-								<li class="navigation-item"><a href="gallery.html" class="navigation-link">Gallery</a></li>
-								<li class="navigation-item"><a href="pre-events.html" class="navigation-link">Pre-events</a></li>
-							<li class="navigation-item"><a href="events.html" class="navigation-link">Competitions</a></li>
-								<li class="navigation-item"><a href="sponsors.html" class="navigation-link">Sponsors</a></li>
+				<div class="col-sm-10 col-xs-12 navigation-container">
+					<div id="navigation" class="navbar-collapse collapse">
+						<ul class="navigation-list pull-left light-text">
+							<li class="navigation-item"><a href="index.html" class="navigation-link">About</a></li>
+							<li class="navigation-item"><a href="gallery.html" class="navigation-link">Gallery</a></li>
+							<li class="navigation-item"><a href="pre-events.html" class="navigation-link">Pre-events</a></li>
+						<li class="navigation-item"><a href="events.html" class="navigation-link">Competitions</a></li>
+							<li class="navigation-item"><a href="sponsors.html" class="navigation-link">Sponsors</a></li>
 <!--								<li class="navigation-item"><a href="schedule.html" class="navigation-link">Schedule</a></li>-->
-							<li class="navigation-item"><a class="navigation-link" href="team2.html">Team</a></li>
+						<li class="navigation-item"><a class="navigation-link" href="team2.html">Team</a></li>
 <!--
-								<li class="dropdown navigation-item">
-							  <a class="dropdown-toggle navigation-link" data-toggle="dropdown" href="#">Team
-							  <span class="caret"></span></a>
-							  <ul class="dropdown-menu">
-								 <li><a class="navigation-link" href="team2.html">2019</a></li>
-								 <li><a class="navigation-link" href="team.html">2018</a></li>
-							  </ul>
-							</li>
+							<li class="dropdown navigation-item">
+						  <a class="dropdown-toggle navigation-link" data-toggle="dropdown" href="#">Team
+						  <span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+							 <li><a class="navigation-link" href="team2.html">2019</a></li>
+							 <li><a class="navigation-link" href="team.html">2018</a></li>
+						  </ul>
+						</li>
 -->
-								<li class="navigation-item"><a href="https://tedxsvnit.wordpress.com" target="_blank" class="navigation-link">Blog</a></li>
-								
+							<li class="navigation-item"><a href="https://tedxsvnit.wordpress.com" target="_blank" class="navigation-link">Blog</a></li>
+							
 
 
-							</ul>
+						</ul>
 <!--
-							<a href="https://www.instagram.com/tedxsvnit/"><span class="fa fa-instagram pull-right" style="background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-  color: white; font-size: 30px; padding: 5px;"></span></a>
-						<a href="https://www.facebook.com/tedxsvnit/"><span class="fa fa-facebook pull-right" style="background: #3B5998;
-	color: white; font-size: 30px; padding: 5px;"></span></a>
+						<a href="https://www.instagram.com/tedxsvnit/"><span class="fa fa-instagram pull-right" style="background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+color: white; font-size: 30px; padding: 5px;"></span></a>
+					<a href="https://www.facebook.com/tedxsvnit/"><span class="fa fa-facebook pull-right" style="background: #3B5998;
+color: white; font-size: 30px; padding: 5px;"></span></a>
 -->
 <!--	 <a href="register.html" class="pull-right buy-btn">Registration Closed!</a>-->
 
-						</div>
 					</div>
 				</div>
 			</div>
-	</header>
+		</div>
+</header>
 
 
-	<section id="about" class="section align-center">
-        <br>
-		<h3><span class="highlight">Speakers</span></h3>
-        <hr>
-		<br>
-		<br>
-			<div class="container">
-
-					
-                        <div id="horizontal_tab1">
-							
-							<div class="col-sm-7 align-left">
-								<h6>Dr. Rachna Arora</h6>
-								<p>Dr. Rachna Arora has been working tirelessly for GIZ - a German organization aimed at solving complex international problems for sustainable development - for the past fifteen years. This has allowed Dr. Arora to follow her passion of helping people in need as her work has become instrumental in shaping the future in a variety of fields including energy, economic development and world peace. Having met ex-Indian president Pranab Mukherjee, Dr. Arora is a renowned individual around the country- this year, at TEDxSVNIT she will talk about her work and how we can all contribute to society in our own little way.
-								
-</p>				</div>
-<div class="col-sm-5 img-column">
-		<div class="hvrbox">
-				<img src="assets/img/speakers/2019/rachna.jpg" alt="" class="img-responsive" />
-			<div class="hvrbox-layer_top">
-				<div class="hvrbox-text">
-						 
-				</div>
-			</div>
-		</div>								
-                    </div></div>
-							<hr>
-                        
-                        <div id="horizontal_tab2">
-							<div class="col-sm-5 img-column">
-		<div class="hvrbox">
-				<img src="assets/img/speakers/2019/preveen.JPG" alt="" class="img-responsive" />
-			<div class="hvrbox-layer_top">
-				<div class="hvrbox-text">
-						 
-				</div>
-			</div>
-		</div>								
-                    </div>
-							<div class="col-sm-7 align-left">
-								<h6>Preveen Pandita</h6>
-								<p>Preveen Pandita is a leading mentalist who has performed incredible feats on the biggest of stages in India including India’s Got Talent, Bigg Boss and AXN’s Ripley’s Believe it or not. One of the most famous mentalists in Asia, Pandita is especially known for his TV special “Mystical Stranger”. <br> Pandita combines clever effects with hilarious and elite class humour and is really active on National TV Shows like Trick Or Real (Discovery Channel), India’s Got Talent and Bigg Boss. He has also been the brand ambassador for popular companies and for elite products including the E-class Mercedes car.
-								</p>	 
-								
-				</div>
-</div>
-							<hr>
-                        
-                        <div id="horizontal_tab3">
-							
-							<div class="col-sm-7 align-left">
-								<h6>Major Mohommed Ali Shah</h6>
-								<p>
-										A TEDx speaker, A Defence expert and A Defence analyst on many popular Indian News Channels, a well known Theatre and film personality too, an alumni of prestigious IIM Calcutta and a visiting faculty at Subhash Ghai's "Whistling Woods International".
-
-										He joined the Short Service Commission in the Army to train as a "Commando" and was posted at the Indo-Pak border at the line of control as a young Lieutenant.
-										
-								</p>
-								
-
-</p>				</div>
-<div class="col-sm-5 img-column">
-		<div class="hvrbox">
-				<img src="assets/img/speakers/2019/shah.jpg" alt="" class="img-responsive" />
-			<div class="hvrbox-layer_top">
-				<div class="hvrbox-text">
-						 
-				</div>
-			</div>
-		</div>								
-                    </div></div>
-							<hr>
-                        
-                        <div id="horizontal_tab4">
-							<div class="col-sm-5 img-column">
-		                      <div class="hvrbox">
-				                    <img src="assets/img/speakers/2019/soni.jpg" alt="" class="img-responsive" />
-			                 <div class="hvrbox-layer_top">
-				                    <div class="hvrbox-text">
-						 
-                                    </div>
-                                </div>
-                            </div>								
-                            </div>
-							<div class="col-sm-7 align-left">
-								<h6>Shri Ghanshyam Soni</h6>
-								<p>
-									Ghanshyam Soni is IRS officer currently serving as Deputy Commissioner in Customs Department, Surat . He is very active in multiple fields. Not only has he brought revolutionary improvements in customs and revenues of Surat but also he has been a very active and dedicated social worker. He has been through tough circumstances in early stages of life but it never stopped him from shining and reaching where he is meant to be. He has completed Honors’ and M.A. in history with distinction and thereafter served as a Lecturer for a brief period before becoming an IRS Officer in 2010.
-								</p>
-                            </div>
-							</div>
-							<hr>
-
-							<div id="horizontal_tab3">
-							
-									<div class="col-sm-7 align-left">
-										<h6>Pratyush Pillai</h6>
-										<p>
-											Pratyush Pillai is a storyteller who has devoted his entire life to understand why we do what we do and how this can be used to bring positive changes in our day-to-day lives. Experienced in the field of Design Thinking, Pillai currently works as a Design Strategist for Tinkerlabs where he is one of their key leaders. Having studied marine engineering at university, Pillai has worked at several places advertising, branding and design- his client list includes Gillette, Amazon, and India TV.
-										</p>
-
-									</div>
-									<div class="col-sm-5 img-column">
-										<div class="hvrbox">
-										<img src="assets/img/speakers/2019/pratyush.jpg" alt="" class="img-responsive" />
-										<div class="hvrbox-layer_top">
-											<div class="hvrbox-text">
-								 
-											</div>
-										</div>
-									</div>								
-								</div>
-							</div>	
-							<hr>
-
-							<div id="horizontal_tab4">
-									<div class="col-sm-5 img-column">
-									  <div class="hvrbox">
-											<img src="assets/img/speakers/2019/jawwad.jpg" alt="" class="img-responsive" />
-									 <div class="hvrbox-layer_top">
-											<div class="hvrbox-text">
-								 
-											</div>
-										</div>
-									</div>								
-									</div>
-									<div class="col-sm-7 align-left">
-										<h6>Jawwad Patel</h6>
-										<p>
-											Jawwad Patel is one of the finest young innovators of the country. His invention of the self-filling water apparatus caught many eyeballs and gained extensive media coverage – yet, this is only one of his several achievements. Having been honored the National Youth Excellence Award by the Government of India, Patel is determined to use his skills for the betterment of the nation.
-										</p>
-									</div>
-							</div>
-<!--
-			    <div id="horizontal_tab3">
-							
-							<div class="col-sm-7 align-left">
-								<h6>Anil Charanjeett</h6>
-								<p>An Indian Bollywood film actor who has worked in films like PK, Singh is Bling, Raees and Hasee toh Phasee, Anil Charanjeett is a talented artist who always gives 100% on screen . Much lauded from his presence in the phenomenal Indian Netflix Original Sacred Games, Charanjeett hails from Balaghat in Madhya Pradesh. Having earned a bachelor’s degree in commerce, Charanjeett was expected to join his father’s business- but he had completely different ambitions. He came to Mumbai- like millions of other Indians- for a career in acting and through a sheer hard work, he has been able to  cement his place in the bollywood industry.
-
-</p>				</div>
-<div class="col-sm-5 img-column">
-		<div class="hvrbox">
-				<img src="assets/img/speakers/anil.jpg" alt="" class="img-responsive" />
-			<div class="hvrbox-layer_top">
-				<div class="hvrbox-text">
-						An Indian Bollywood film actor who has worked in films like PK, Singh is Bling, Raees and Hasee toh Phasee, Anil Charanjeett is a talented artist who always gives 100% on screen . 
-				</div>
-			</div>
-		</div>								
-                    </div></div>
-							<hr>
-					<div id="horizontal_tab1" class="tab-pane active in">
-							<div class="col-sm-5 img-column">
-									<div class="hvrbox">
-										<img src="assets/img/speakers/Anjan-Prakash-2-768x699.jpg" alt="" class="img-responsive" />
-										<div class="hvrbox-layer_top">
-											<div class="hvrbox-text">
-													Anjan Prakash started her career in Ogilvy Advertising and then co-founded Brown Skins – a film production house in Mumbai which produced several commercials for national and international clients.
-											</div>
-										</div>
-									</div>	
-							</div>
-							<div class="col-sm-7 align-left">
-								<h6> Anjan Prakash</h6>
-								<p> 
-	Anjan Prakash started her career in Ogilvy Advertising and then co-founded Brown Skins – a film production house in Mumbai which produced several commercials for national and international clients. After 16 years in advertising, she realized her passion was actually in working at the intersection between business, design and nature. Currently she divides her time between being a Masters cum Professional Certification student and a Biomimicry Facilitator. Her talks and workshops are aimed at educating and informing audiences about how to design better products, processes and systems by looking to nature for time-tested solutions. As a facilitator, she holds the intention of bringing together multidisciplinary professionals to design biomimetic products.
-
-
-				    </p>							
-							</div>
-						</div><hr>
-			    <div id="horizontal_tab2">
-							<div class="col-sm-7 align-left">
-								<h6>Nikhil Malhotra</h6>
-	<p>Renowned for being an amazing father, Nikhil Malhotra was instrumental in the innovation of the healthcare robot Saarthi. His inputs, along with his little son’s, helped the healthcare robot become a reality which has the potential to help millions, maybe even billions of people all over the world. The initial idea of Saarthi was achieved by Malhotra through the numerous questions asked by his four-year old son, Angad, about what a robot could possibly do in the future. Nikhil Malhotra is the creator of Maker’s Lab, a unique Thin-q-bator space within TechMahindra with over 17 years of experience in a variety of technology domains.
-</p>
-							</div>
-
-							<div class="col-sm-5 img-column">
-									<div class="hvrbox">
-										<img src="assets/img/speakers/DSC_3180.jpg" alt="" class="img-responsive" />
-											<div class="hvrbox-layer_top">
-												<div class="hvrbox-text">
-														Nikhil Malhotra is the creator of Maker’s Lab, a unique Thin-q-bator space within TechMahindra with over 17 years of experience in a variety of technology domains. 
-												</div>
-											</div>
-									</div>	
-								
-							</div>
-						</div>
+<section id="about" class="section align-center">
+	<br>
+	<h3><span class="highlight">Speakers</span></h3>
 	<hr>
-			    
-			    <div id="horizontal_tab3">
-							<div class="col-sm-5 img-column">
-									<div class="hvrbox">
-										<img src="assets/img/speakers/file4.jpeg" alt="" class="img-responsive" />
-										<div class="hvrbox-layer_top">
-											<div class="hvrbox-text">
-													A backpacker, a conservationist, an educator and a marathon runner. While working at Mahindra Susten- Mahindra’s clean technology arm- Surmai Kaushik got the greatest opportunity of her life- to go to Antarctica with Robert Swann.
-											</div>
-										</div>
-									</div>								
-							</div>
-							<div class="col-sm-7 align-left">
-								<h6>Surmai Kaushik</h6>
-								<p>A backpacker, a conservationist, an educator and a marathon runner.  While working at Mahindra Susten- Mahindra’s clean technology arm- Surmai Kaushik got the greatest opportunity of her life- to go to Antarctica with Robert Swann. While this may not be everyone’s cup of coffee, it certainly was for Surmai who has been trying to raise awareness of climate change for her entire life. With her background in climate science, she was a perfect pick for the program Mission 2041- which aims to clean up more than 300 million tonnes of Carbon Dioxide. Kaushik consistently saw the horrible effects of global warming on the poor continent of Antarctica which was covered with melting glaciers and destroyed wildlife for native animals. Kaushik has actively pledged to address this problem by bringing up more clean technology in India with the help of Mahindra Susten.
-
-</p>				</div>
-				
-				
-
-	    </div>
-
-	    <hr>
-			    <div id="horizontal_tab3">
-							
-							<div class="col-sm-7 align-left">
-								<h6>Jitendra Singh</h6>
-								<p>Jitendra Singh has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
-
-</p>				</div>
-<div class="col-sm-5 img-column">
-		<div class="hvrbox">
-				<img src="assets/img/speakers/jitendra.jpg" alt="" class="img-responsive" />
-				<div class="hvrbox-layer_top">
-					<div class="hvrbox-text">
-							Jitendra Singh is a security guard at SVNIT, Surat.  He has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
-					</div>
-				</div>
-			</div>								
-							</div>
-				
-				
-
-	    </div>
-
-	<hr>
-			    <div id="horizontal_tab3">
-							<div class="col-sm-5 img-column">
-									<div class="hvrbox">
-										<img src="assets/img/speakers/pratul.jpg" alt="" class="img-responsive" />
-
-											<div class="hvrbox-layer_top">
-												<div class="hvrbox-text">
-														A 24- year old Musician/Astrologer/Mythologist hailing from Agra, Pratul has deep interest towards science, arts, culture, philosophy and there is nothing called "hobby" in his life, there is always a "passion" and in some cases, it is an obsession.
-												</div>
-											</div>
-									</div>	
-							</div>
-							<div class="col-sm-7 align-left">
-								<h6>Pratul Vishera</h6>
-								<p>A 24- year old Musician/Astrologer/Mythologist hailing from Agra. He has deep interest towards science, arts, culture, philosophy and there is nothing called "hobby" in his life, there is always a "passion" and in some cases, it is an obsession. This unquenchable thirst of knowledge put him into astrology as he was always attracted towards occult sciences. So, there was an incident which happened with him where a Jyotish fooled his parents by saying that he has "Kaal Sarp Yog". By hearing such heavy and frightening words his parents got worried and they did everything as per that idiot pandit and it cost them around 7,000 Rs for that ceremony which happened in the water body around 4 AM in the month of January. But later, when his interest grew up in astrology and started learning about it he found that there is no such Yog in my chart, and he has lived 2 years of his life by believing that he is a born loser and nothing good can happen in his life. So on that day, he has decided that he will aware people as much as he can about the several myths of it and would help them by showing them a positive and practical way.
-
-</p>				</div>
-
-				
-				
-
-	    </div>	    
-
-	     <hr>
-			    <div id="horizontal_tab3">
-							
-							<div class="col-sm-7 align-left">
-								<h6>Dhiraj Jalan</h6>
-								<p>Passionate about safety of health and environment, Dhiraj Jalan, the young entrepreneur, has taken multiple initiatives to help address the issues of adulteration and toxicity. From healthy fashion jewellery (Lustreus Ornaments Pvt. Ltd.) to healthy foods (YogaMilk), his journey has been diverse and has only just begun. He believes in building responsible organisations that are conscious of their impact on both, society and surroundings. The 22-year-old speaker is currently working on redefining how health is delivered at your doorsteps without sacrificing convenience. Today, the healthfulness of our food has largely been compromised in the name of convenient consumption and he is striving to set this right.  
-
-
-
-</p>				</div>
-				
-				<div class="col-sm-5 img-column">
-						<div class="hvrbox">
-								<img src="assets/img/speakers/dhiraj.jpg" alt="" class="img-responsive" />
-
-									<div class="hvrbox-layer_top">
-										<div class="hvrbox-text">
-												Passionate about safety of health and environment, Dhiraj Jalan, the young entrepreneur, has taken multiple initiatives to help address the issues of adulteration and toxicity.
-										</div>
-									</div>
-							</div>	
-				</div>
-
-                        </div>
--->
-                </div></div>
-
-
-
-		</section>
-
-	<section class="footer" id="contact">
-
+	<br>
+	<br>
 		<div class="container">
 
+				
+					<div id="horizontal_tab1">
+						
+						<div class="col-sm-7 align-left">
+							<h6>Dr. Rachna Arora</h6>
+							<p>Dr. Rachna Arora has been working tirelessly for GIZ - a German organization aimed at solving complex international problems for sustainable development - for the past fifteen years. This has allowed Dr. Arora to follow her passion of helping people in need as her work has become instrumental in shaping the future in a variety of fields including energy, economic development and world peace. Having met ex-Indian president Pranab Mukherjee, Dr. Arora is a renowned individual around the country- this year, at TEDxSVNIT she will talk about her work and how we can all contribute to society in our own little way.
+							</p><br>
+							<p><b>Awards and Recognition</b><br>
+								<ul style="list-style-type: circle;">
+									<li>In 2014, Arora and her team at GIZ-IGEP had the chance to meet then-President Pranab Mukherjee at the Rashtrapati Bhawan to discuss various issues India is facing and ways they can be resolved. This involved discussion on topics such as effective e-waste management and damage control.</li>
+									<li>Dr. Arora helped organize the Circular Economy Mission (CEM) 2018 in India. This is the first time such an event has happened in our nation, giving a bold statement to the world on how India is adapting in times of change.</li>
+									<li>In the 2017 NITI Aayog strategy paper on resource efficiency, Dr. Arora’s name is mentioned on the first page itself where the principal advisor, Ratan P. Watsal has said that Dr. Arora is one of the two people that may be consulted on anything mentioned in the paper.</li>
+								</ul>
 
-				<div class="col-md-4">
-					<ul class="footer-nav align-center">
-						<li class="footer-nav-item" style="text-align: center"><a href="mailto:contact@tedxsvnit.in" target="_top">contact@tedxsvnit.in</a></li><br>
-						<li class="footer-nav-item" style="text-align: center">Phone: +91-7599416785</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<ul class="align-center">
-							<li class="socials-nav-item"><a href="https://www.twitter.com/tedxsvnit" target="_blank"><span class="fa fa-twitter"></span></a></li>
-							<li class="socials-nav-item"><a href="https://www.facebook.com/tedxsvnit/" target="_blank"><span class="fa fa-facebook"></span></a></li>
-							<li class="socials-nav-item"><a href="https://www.instagram.com/tedxsvnit/" target="_blank"><span class="fa fa-instagram"></span></a></li>
-							<li class="socials-nav-item"><a href="https://www.quora.com/profile/TEDx-SVNIT" target="blank"><span class="fa fa-quora"></span></a></li>
-						</ul>
-				</div>
-				<div class="col-md-4 align-center">
-					<ul class="footer-nav align-center"><br><li class="footer-nav-item"><small>All Rights Reserved © 2019</small></li></ul>
-				</div>
-
-
+							</p>
 			</div>
+<div class="col-sm-5 img-column">
+	<div class="hvrbox">
+			<img src="assets/img/speakers/2019/rachna.jpg" alt="" class="img-responsive" />
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+					 
+			</div>
+		</div>
+	</div>								
+				</div></div>
+						<hr>
+					
+					<div id="horizontal_tab2">
+						<div class="col-sm-5 img-column">
+	<div class="hvrbox">
+			<img src="assets/img/speakers/2019/preveen.jpg" alt="" class="img-responsive" />
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+					 
+			</div>
+		</div>
+	</div>								
+				</div>
+						<div class="col-sm-7 align-left">
+							<h6>Preveen Pandita</h6>
+							<p>Preveen Pandita is a leading mentalist who has performed incredible feats on the biggest of stages in India including India’s Got Talent, Bigg Boss and AXN’s Ripley’s Believe it or not. One of the most famous mentalists in Asia, Pandita is especially known for his TV special “Mystical Stranger”. <br> Pandita combines clever effects with hilarious and elite class humour and is really active on National TV Shows like Trick Or Real (Discovery Channel), India’s Got Talent and Bigg Boss. He has also been the brand ambassador for popular companies and for elite products including the E-class Mercedes car.
+							</p>	 
+							<br>
+							<p><b>Awards and Recognition</b><br>
+								<ul style="list-style-type: circle;">
+									<li>
+										He is the only Indian Mentalist to have won the Ripley’s Believe It or Not Talent Hunt, which he won in  2012.
+									</li>
+									<li>
+										He has been voted as the best illusionist of India and most booked illusionist in Asia by Mid-Day India.
+									</li>
+									<li>
+										He has been invited to many prestigious places like IIT Delhi, IIT Guwahati, IIT Madras, and to many niche groups like the Indian Army, SAARC Summit, IIM’s and has given multiple TEDx talks.
+									</li>
+								</ul>
+							</p>
+			</div>
+</div>
+						<hr>
+					
+					<div id="horizontal_tab3">
+						
+						<div class="col-sm-7 align-left">
+							<h6>Major Mohommed Ali Shah</h6>
+							<p>
+									A TEDx speaker, A Defence expert and A Defence analyst on many popular Indian News Channels, a well known Theatre and film personality too, an alumni of prestigious IIM Calcutta and a visiting faculty at Subhash Ghai's "Whistling Woods International".
+
+									He joined the Short Service Commission in the Army to train as a "Commando" and was posted at the Indo-Pak border at the line of control as a young Lieutenant.
+									
+							</p><br>
+							<p><b>Awards and Recognition</b><br>
+								<ul style="list-style-type: circle;">
+									<li>
+										He was awarded a commendation card for his exceptional and meritorious service to the nation for being unmindful of his own personal safety and going beyond the call of duty while serving with the “Assam rifles” in the North East.
+									</li>
+									<li>
+										He has acted in "Agent Vinod" and in Vishal Bhardwaj's "Haider" which won 5 National awards apart from from several other prestigious film awards. He has recently completed shooting for National School of Drama alumnus and National award winning director Tigmanshu Dhulia's latest film "Yaara" and Jahnu Baruah's " Broken window" produced by Priyanka Chopra.
+									</li>
+									<li>
+										Major Ali won the coveted award of “Best actor” at the prestigious Delhi International Film Festival, “Best actor” at the International Film Festival of Prayag and “Best actor” at the Aligarh Film Saaz International Film Festival.
+									</li>
+									<li>
+										The best thing about Major Shah is that all the talks given by him have received standing ovations from the audience.
+									</li>
+								</ul>
+							</p>
+</p>				</div>
+<div class="col-sm-5 img-column">
+	<div class="hvrbox">
+			<img src="assets/img/speakers/2019/shah.jpg" alt="" class="img-responsive" />
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+					 
+			</div>
+		</div>
+	</div>								
+				</div></div>
+						<hr>
+					
+					<div id="horizontal_tab4">
+						<div class="col-sm-5 img-column">
+						  <div class="hvrbox">
+								<img src="assets/img/speakers/2019/soni.jpg" alt="" class="img-responsive" />
+						 <div class="hvrbox-layer_top">
+								<div class="hvrbox-text">
+					 
+								</div>
+							</div>
+						</div>								
+						</div>
+						<div class="col-sm-7 align-left">
+							<h6>Shri Ghanshyam Soni</h6>
+							<p>
+								Ghanshyam Soni is IRS officer currently serving as Deputy Commissioner in Customs Department, Surat . He is very active in multiple fields. Not only has he brought revolutionary improvements in customs and revenues of Surat but also he has been a very active and dedicated social worker. He has been through tough circumstances in early stages of life but it never stopped him from shining and reaching where he is meant to be. He has completed Honors’ and M.A. in history with distinction and thereafter served as a Lecturer for a brief period before becoming an IRS Officer in 2010.
+							</p><br>
+							<p><b>Awards and Recognition</b><br>
+								<ul style="list-style-type: circle;">
+									<li>
+										Ghanshyam Soni has adopted villages and government schools like KV Ichchhanath to look after their development.
+									</li>
+									<li>
+										For his exceptional work in providing amenities to his village Melawas , he has been honored with Gujarat Ratna Award b World Record Foundation and Awareness Public Charitable Trust in VNSGU.
+									</li>
+									<li>
+										He has also been honored with Global Dignitary Award.
+										He qualified UPSC in 2010 and has been serving an IRS Officer since then.
+										He is actively involved in social activities for environment and differentially abled children.
+											
+									</li>
+								</ul>
+							</p>
+						</div>
+						</div>
+						<hr>
+
+						<div id="horizontal_tab3">
+						
+								<div class="col-sm-7 align-left">
+									<h6>Pratyush Pillai</h6>
+									<p>
+										Pratyush Pillai is a storyteller who has devoted his entire life to understand why we do what we do and how this can be used to bring positive changes in our day-to-day lives. Experienced in the field of Design Thinking, Pillai currently works as a Design Strategist for Tinkerlabs where he is one of their key leaders. Having studied marine engineering at university, Pillai has worked at several places advertising, branding and design- his client list includes Gillette, Amazon, and India TV.
+									</p><br>				
+									<p><b>Awards and Recognition</b><br>
+										<ul style="list-style-type: circle;">
+											<li>
+												Pillai has an excellent track record at his previous companies and this can be verified by his client list which includes not only Idea Cellular and Mother Dairy but also Asian Paints and Standard Chartered Bank. Pillai’s record of clients speak for themselves on his ability to efficiently do his work.
+											</li>
+											<li>
+												As a recommendation claims, Pillai ‘...leads with his heart.’ This statement, given by the Co-founder and CEO of a firm he has worked with is an indication of the impact Pillai has on the clients he works with, and also shows how easily he connects with those of whom he works with.
+											</li>
+											
+										</ul>
+									</p>
+								</div>
+								<div class="col-sm-5 img-column">
+									<div class="hvrbox">
+									<img src="assets/img/speakers/2019/pratyush.jpg" alt="" class="img-responsive" />
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">
+							 
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>	
+						<hr>
+
+						<div id="horizontal_tab4">
+								<div class="col-sm-5 img-column">
+								  <div class="hvrbox">
+										<img src="assets/img/speakers/2019/jawwad.jpg" alt="" class="img-responsive" />
+								 <div class="hvrbox-layer_top">
+										<div class="hvrbox-text">
+							 
+										</div>
+									</div>
+								</div>								
+								</div>
+								<div class="col-sm-7 align-left">
+									<h6>Jawwad Patel</h6>
+									<p>
+										Jawwad Patel is one of the finest young innovators of the country. His invention of the self-filling water apparatus caught many eyeballs and gained extensive media coverage – yet, this is only one of his several achievements. Having been honored the National Youth Excellence Award by the Government of India, Patel is determined to use his skills for the betterment of the nation.
+									</p><br>
+									<p><b>Awards and Recognition</b><br>
+										<ul style="list-style-type: circle;">
+											<li>
+												Government of India Honored with National Youth Award Excellence in Research & Innovation – The Highest Civilian Award for Youth in India.
+											</li>
+											<li>
+												Recipient of Prestigious The Diana Award 2019 in Research and Innovation from British Government, Young Innovator Award 2018 Exemplary Work in Research and Innovation, WIF, Dallas, Texas, United States of America.
+											</li>
+											<li>
+												Inventor of Dewdrop, Asia’s first 3D Printed Smart Atmospheric Water Generator– Recognized and Appreciated globally.
+											</li>
+										</ul>
+									</p>
+								</div>
+						</div>
+<!--
+			<div id="horizontal_tab3">
+						
+						<div class="col-sm-7 align-left">
+							<h6>Anil Charanjeett</h6>
+							<p>An Indian Bollywood film actor who has worked in films like PK, Singh is Bling, Raees and Hasee toh Phasee, Anil Charanjeett is a talented artist who always gives 100% on screen . Much lauded from his presence in the phenomenal Indian Netflix Original Sacred Games, Charanjeett hails from Balaghat in Madhya Pradesh. Having earned a bachelor’s degree in commerce, Charanjeett was expected to join his father’s business- but he had completely different ambitions. He came to Mumbai- like millions of other Indians- for a career in acting and through a sheer hard work, he has been able to  cement his place in the bollywood industry.
+
+</p>				</div>
+<div class="col-sm-5 img-column">
+	<div class="hvrbox">
+			<img src="assets/img/speakers/anil.jpg" alt="" class="img-responsive" />
+		<div class="hvrbox-layer_top">
+			<div class="hvrbox-text">
+					An Indian Bollywood film actor who has worked in films like PK, Singh is Bling, Raees and Hasee toh Phasee, Anil Charanjeett is a talented artist who always gives 100% on screen . 
+			</div>
+		</div>
+	</div>								
+				</div></div>
+						<hr>
+				<div id="horizontal_tab1" class="tab-pane active in">
+						<div class="col-sm-5 img-column">
+								<div class="hvrbox">
+									<img src="assets/img/speakers/Anjan-Prakash-2-768x699.jpg" alt="" class="img-responsive" />
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">
+												Anjan Prakash started her career in Ogilvy Advertising and then co-founded Brown Skins – a film production house in Mumbai which produced several commercials for national and international clients.
+										</div>
+									</div>
+								</div>	
+						</div>
+						<div class="col-sm-7 align-left">
+							<h6> Anjan Prakash</h6>
+							<p> 
+Anjan Prakash started her career in Ogilvy Advertising and then co-founded Brown Skins – a film production house in Mumbai which produced several commercials for national and international clients. After 16 years in advertising, she realized her passion was actually in working at the intersection between business, design and nature. Currently she divides her time between being a Masters cum Professional Certification student and a Biomimicry Facilitator. Her talks and workshops are aimed at educating and informing audiences about how to design better products, processes and systems by looking to nature for time-tested solutions. As a facilitator, she holds the intention of bringing together multidisciplinary professionals to design biomimetic products.
+
+
+				</p>							
+						</div>
+					</div><hr>
+			<div id="horizontal_tab2">
+						<div class="col-sm-7 align-left">
+							<h6>Nikhil Malhotra</h6>
+<p>Renowned for being an amazing father, Nikhil Malhotra was instrumental in the innovation of the healthcare robot Saarthi. His inputs, along with his little son’s, helped the healthcare robot become a reality which has the potential to help millions, maybe even billions of people all over the world. The initial idea of Saarthi was achieved by Malhotra through the numerous questions asked by his four-year old son, Angad, about what a robot could possibly do in the future. Nikhil Malhotra is the creator of Maker’s Lab, a unique Thin-q-bator space within TechMahindra with over 17 years of experience in a variety of technology domains.
+</p>
+						</div>
+
+						<div class="col-sm-5 img-column">
+								<div class="hvrbox">
+									<img src="assets/img/speakers/DSC_3180.jpg" alt="" class="img-responsive" />
+										<div class="hvrbox-layer_top">
+											<div class="hvrbox-text">
+													Nikhil Malhotra is the creator of Maker’s Lab, a unique Thin-q-bator space within TechMahindra with over 17 years of experience in a variety of technology domains. 
+											</div>
+										</div>
+								</div>	
+							
+						</div>
+					</div>
+<hr>
+			
+			<div id="horizontal_tab3">
+						<div class="col-sm-5 img-column">
+								<div class="hvrbox">
+									<img src="assets/img/speakers/file4.jpeg" alt="" class="img-responsive" />
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">
+												A backpacker, a conservationist, an educator and a marathon runner. While working at Mahindra Susten- Mahindra’s clean technology arm- Surmai Kaushik got the greatest opportunity of her life- to go to Antarctica with Robert Swann.
+										</div>
+									</div>
+								</div>								
+						</div>
+						<div class="col-sm-7 align-left">
+							<h6>Surmai Kaushik</h6>
+							<p>A backpacker, a conservationist, an educator and a marathon runner.  While working at Mahindra Susten- Mahindra’s clean technology arm- Surmai Kaushik got the greatest opportunity of her life- to go to Antarctica with Robert Swann. While this may not be everyone’s cup of coffee, it certainly was for Surmai who has been trying to raise awareness of climate change for her entire life. With her background in climate science, she was a perfect pick for the program Mission 2041- which aims to clean up more than 300 million tonnes of Carbon Dioxide. Kaushik consistently saw the horrible effects of global warming on the poor continent of Antarctica which was covered with melting glaciers and destroyed wildlife for native animals. Kaushik has actively pledged to address this problem by bringing up more clean technology in India with the help of Mahindra Susten.
+
+</p>				</div>
+			
+			
+
+	</div>
+
+	<hr>
+			<div id="horizontal_tab3">
+						
+						<div class="col-sm-7 align-left">
+							<h6>Jitendra Singh</h6>
+							<p>Jitendra Singh has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
+
+</p>				</div>
+<div class="col-sm-5 img-column">
+	<div class="hvrbox">
+			<img src="assets/img/speakers/jitendra.jpg" alt="" class="img-responsive" />
+			<div class="hvrbox-layer_top">
+				<div class="hvrbox-text">
+						Jitendra Singh is a security guard at SVNIT, Surat.  He has written over 6000 letters over the past 15 years to the families of martyrs. He believes that if someone has sacrificed something for the betterment of society and country, he should receive encouraging words from those people for whom they have sacrificed. 
+				</div>
+			</div>
+		</div>								
+						</div>
+			
+			
+
+	</div>
+
+<hr>
+			<div id="horizontal_tab3">
+						<div class="col-sm-5 img-column">
+								<div class="hvrbox">
+									<img src="assets/img/speakers/pratul.jpg" alt="" class="img-responsive" />
+
+										<div class="hvrbox-layer_top">
+											<div class="hvrbox-text">
+													A 24- year old Musician/Astrologer/Mythologist hailing from Agra, Pratul has deep interest towards science, arts, culture, philosophy and there is nothing called "hobby" in his life, there is always a "passion" and in some cases, it is an obsession.
+											</div>
+										</div>
+								</div>	
+						</div>
+						<div class="col-sm-7 align-left">
+							<h6>Pratul Vishera</h6>
+							<p>A 24- year old Musician/Astrologer/Mythologist hailing from Agra. He has deep interest towards science, arts, culture, philosophy and there is nothing called "hobby" in his life, there is always a "passion" and in some cases, it is an obsession. This unquenchable thirst of knowledge put him into astrology as he was always attracted towards occult sciences. So, there was an incident which happened with him where a Jyotish fooled his parents by saying that he has "Kaal Sarp Yog". By hearing such heavy and frightening words his parents got worried and they did everything as per that idiot pandit and it cost them around 7,000 Rs for that ceremony which happened in the water body around 4 AM in the month of January. But later, when his interest grew up in astrology and started learning about it he found that there is no such Yog in my chart, and he has lived 2 years of his life by believing that he is a born loser and nothing good can happen in his life. So on that day, he has decided that he will aware people as much as he can about the several myths of it and would help them by showing them a positive and practical way.
+
+</p>				</div>
+
+			
+			
+
+	</div>	    
+
+	 <hr>
+			<div id="horizontal_tab3">
+						
+						<div class="col-sm-7 align-left">
+							<h6>Dhiraj Jalan</h6>
+							<p>Passionate about safety of health and environment, Dhiraj Jalan, the young entrepreneur, has taken multiple initiatives to help address the issues of adulteration and toxicity. From healthy fashion jewellery (Lustreus Ornaments Pvt. Ltd.) to healthy foods (YogaMilk), his journey has been diverse and has only just begun. He believes in building responsible organisations that are conscious of their impact on both, society and surroundings. The 22-year-old speaker is currently working on redefining how health is delivered at your doorsteps without sacrificing convenience. Today, the healthfulness of our food has largely been compromised in the name of convenient consumption and he is striving to set this right.  
+
+
+
+</p>				</div>
+			
+			<div class="col-sm-5 img-column">
+					<div class="hvrbox">
+							<img src="assets/img/speakers/dhiraj.jpg" alt="" class="img-responsive" />
+
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">
+											Passionate about safety of health and environment, Dhiraj Jalan, the young entrepreneur, has taken multiple initiatives to help address the issues of adulteration and toxicity.
+									</div>
+								</div>
+						</div>	
+			</div>
+
+					</div>
+-->
+			</div></div>
+
+
+
 	</section>
 
-		<!--[if lt IE 9]>
-			<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
-		<![endif]-->
-		<!--[if (gte IE 9) | (!IE)]><!-->
-			<script type="text/javascript" src="assets/js/jquery-2.1.4.min68b3.js?ver=1"></script>
-		<!--<![endif]-->
+<section class="footer" id="contact">
 
-		<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;libraries=places"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="assets/js/toastr.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
-		<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
-		<script type="text/javascript" src="assets/js/modal-box.js"></script>
-		<script type="text/javascript" src="assets/js/ventcamp.js"></script>
-		<script>
-			$(function() {
-				var mobileScreenTreshold = 1024;
-				$(".hvrbox").click(function(e) {
-					if($(window).width() <= mobileScreenTreshold) {
-						if($(this).hasClass("active")) {
-							$(this).removeClass("active");
-						} else {
-							e.preventDefault();
-							$(this).addClass("active");
-						}
-					} else {
+	<div class="container">
+
+
+			<div class="col-md-4">
+				<ul class="footer-nav align-center">
+					<li class="footer-nav-item" style="text-align: center"><a href="mailto:contact@tedxsvnit.in" target="_top">contact@tedxsvnit.in</a></li><br>
+					<li class="footer-nav-item" style="text-align: center">Phone: +91-7599416785</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class="align-center">
+						<li class="socials-nav-item"><a href="https://www.twitter.com/tedxsvnit" target="_blank"><span class="fa fa-twitter"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.facebook.com/tedxsvnit/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.instagram.com/tedxsvnit/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+						<li class="socials-nav-item"><a href="https://www.quora.com/profile/TEDx-SVNIT" target="blank"><span class="fa fa-quora"></span></a></li>
+					</ul>
+			</div>
+			<div class="col-md-4 align-center">
+				<ul class="footer-nav align-center"><br><li class="footer-nav-item"><small>All Rights Reserved © 2019</small></li></ul>
+			</div>
+
+
+		</div>
+</section>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min68b3.js?ver=1"></script>
+	<!--<![endif]-->
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;libraries=places"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/modal-box.js"></script>
+	<script type="text/javascript" src="assets/js/ventcamp.js"></script>
+	<script>
+		$(function() {
+			var mobileScreenTreshold = 1024;
+			$(".hvrbox").click(function(e) {
+				if($(window).width() <= mobileScreenTreshold) {
+					if($(this).hasClass("active")) {
 						$(this).removeClass("active");
+					} else {
+						e.preventDefault();
+						$(this).addClass("active");
 					}
-				});
+				} else {
+					$(this).removeClass("active");
+				}
 			});
-		</script>
+		});
+	</script>
 
-	</body>
+</body>
 
 
-	</html>
+</html>
