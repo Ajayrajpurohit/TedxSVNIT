@@ -180,10 +180,11 @@ var x = setInterval(function() {
 		<header class="header header-black fixed" style="min-height: 92px;">
 			<div class="header-wrapper" style="display: block;">
 				<div class="container">
+					
 					<div class="col-sm-2 col-xs-12 navigation-header">
 						<a href="./index.html" class="logo">
-						<img src="./assets/img/1.png" alt="VentCamp" class="retina-hide" width="150" height="55">
-						<img src="./assets/img/1.png" alt="VentCamp" class="retina-show" width="150" height="55">
+						<img src="./assets/img/1.png" alt="tedxsvnit" class="retina-hide" width="150" height="55">
+						<img src="./assets/img/1.png" alt="tedxsvnit" class="retina-show" width="150" height="55">
 					</a>
 						<button class="navbar-toggle" data-toggle="collapse" data-target="#navigation1" aria-expanded="false" aria-controls="navigation1">
 							<span class="icon-bar"></span>
@@ -209,7 +210,7 @@ var x = setInterval(function() {
 										<li class="navigation-item"><a href="./sponsors.html" class="navigation-link">2018</a></li>
 									</ul>
 								</li>
-								<li class="navigation-item dropdown">
+								<li class="navigation-item dropdown" > 
 									<a class="navigation-link dropdown-toggle" data-toggle="dropdown">Team</a>
 									<ul class="dropdown-menu">
 										<li class="navigation-item"><a href="./team2.html" class="navigation-link">2019</a></li>
@@ -230,9 +231,9 @@ var x = setInterval(function() {
 			<div style="text-align: center;"><h3 style="color: red; font-weight: 200"> Building Network Through Ideas!! </h3></div>
 		</div>
 	</section>
+	<hr>
 	 <section id="involve" class="section align-center">
 		<div class="container" >
-		
 
 								<h3>Back in...</h3>
 								<div id="clockdiv">
@@ -253,12 +254,12 @@ var x = setInterval(function() {
 										<div class="smalltext">Seconds</div>
 									</div>
 								</div>
+								<br>
 
-
-								<h3 class="package-title" style="font-family: 'Roboto', Arial, sans-serif;">Tickets Available!!<br><span style="font-weight: 300;"></span></h3><br>
+								<div class="btn btn-lg btn-outline-clr text-center"><a style="text-decoration: none;" data-toggle="modal" data-target="#myModal2">Venue: SVNIT Guest House</a></div>
+								<br><br><br>
+								<h3 class="package-title" style="font-family: 'Roboto', Arial, sans-serif;">Tickets Available!!<br><span style="font-weight: 300;"></span></h3>
 								<div class="btn btn-lg btn-outline-clr text-center"><a style="text-decoration: none;" data-toggle="modal" data-target="#myModal">Click Here!!</a></div>
-			
-<!--			<a href="https://forms.gle/d2SAMn63TMjnD5raA" class="btn btn-lg btn-outline-clr">Click Here!</a>-->
 							</div>
 		 					<div class="container">
 							  <!-- Modal -->
@@ -268,10 +269,12 @@ var x = setInterval(function() {
 									<!-- Modal content-->
 									<div class="modal-content">
 									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
 										 <h4 class="modal-title" style="font-weight: 100;">Benefits of attending TEDxSVNIT</h4>
-										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  
 									  </div>
 									  <div class="modal-body">
+										  
 										 <p><img src="assets/img/icon/bene.jpg"></p>
 										  <a href="https://forms.gle/d2SAMn63TMjnD5raA" class="btn btn-lg btn-outline-clr">Book Ticket</a>
 									  </div>
@@ -285,9 +288,34 @@ var x = setInterval(function() {
 
 							</div>
 
+							<div class="container">
+								<!-- Modal -->
+								<div class="modal fade" id="myModal2" role="dialog">
+								   <div class="modal-dialog">
+  
+									  <!-- Modal content-->
+									  <div class="modal-content">
+										<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal">&times;</button>
+											  <h6 class="modal-title" style="font-weight: 100;">Date: 20th October, 2019</h6>
+											  <h6 class="modal-title" style="font-weight: 100;">Venue: SVNIT Guest House</h6>
+										</div>
+										<div class="modal-body">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7593.196982808066!2d72.77816490744601!3d21.167749994059985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04deb72960021%3A0x5f8fcc35cf262608!2sSVNIT%20Guest%20House!5e0!3m2!1sen!2sin!4v1571187649053!5m2!1sen!2sin" width="100%" height="70%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+										</div>
+										<div class="modal-footer">
+										   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									  </div>
+  
+								   </div>
+								</div>
+  
+							  </div>
+
 						
 				</section> 
-
+				<hr><br><br>
 				<section id="about" class="section align-center">
 					<div class="container">
 
@@ -534,7 +562,8 @@ var x = setInterval(function() {
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="package-column">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftedxsvnit%2F&tabs=timeline&width=340&height=590&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=564604560401282" width="340" height="610" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>	</div>
+						<iframe id="fb" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftedxsvnit%2F&tabs=timeline&width=340&height=590&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=564604560401282" width="340" height="610" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>	
+					</div>
 				</div>
 
 				<div class="col-sm-4">
