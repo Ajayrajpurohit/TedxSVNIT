@@ -153,6 +153,15 @@
  .btn > a:hover {
         color: white;
     }
+	.img-rounded {
+  transition: filter .1s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+.img-rounded:hover {
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
 </style>
 	
 <script>
@@ -244,9 +253,13 @@ var x = setInterval(function() {
 	 <section id="involve" class="section align-center">
 		<div class="container" >
 			<h3 class="package-title" style="font-family: 'Roboto', Arial, sans-serif;">Tickets Available!!<br><span style="font-weight: 300;"></span></h3>
-			<div><a class="btn btn-lg btn-outline-clr text-center" style="text-decoration: none;" data-toggle="modal" data-target="#myModal">Click Here!!</a></div>
+			<h5 class="package-title" style="font-family: 'Roboto', Arial, sans-serif; font-weight: 300;">Only Few Seats Left.<br></h5>
+
+			<div><a class="btn btn-lg btn-outline-clr text-center" style="text-decoration: none;" data-toggle="modal" data-target="#myModal">Grab Now</a></div>
 			<br><br><br>
-								<h4 class="package-title" style="font-family: 'Roboto', Arial, sans-serif; font-weight: 300;">Time left...</h4>
+								<h4 class="package-title" style="font-family: 'Roboto', Arial, sans-serif; font-weight: 300;">See you at <a class=" text-center" style="text-decoration: none;" data-toggle="modal" data-target="#myModal2">SVNIT Guest House</a></h4>
+								<h4 class="package-title" style="font-family: 'Roboto', Arial, sans-serif; font-weight: 300;">20th October, 2019</h4>
+
 								<div id="clockdiv">
 									<div>
 										<span class="days" id="demo_days"></span>
@@ -266,9 +279,7 @@ var x = setInterval(function() {
 									</div>
 								</div>
 								<br><br>
-
-								<div><a class="btn btn-lg btn-outline-clr text-center" style="text-decoration: none;" data-toggle="modal" data-target="#myModal2">Venue</a></div>
-								<br><br><br>
+								<br>
 								
 							</div>
 		 					<div class="container">
@@ -406,75 +417,72 @@ var x = setInterval(function() {
 						<br>
 			</div>
 		</section>
-	<section class="section"> <!--Notification Panel-->
+		
+	<section class="section align-center"> <!--Notification Panel-->
 		<div class="container">
-			<hr><hr>
-			<div class="align-left"><h4 style="font-weight: 200;">LIVE Events</h4></div>
-			<hr><hr><br><br>
+				<hr><hr>
+				<div class="align-left"><h4 style="font-weight: 200;">Speakers</h4></div>
+				<hr><hr><br><br>
+				<div class="container">
+					<br />
+					<br />
+		
+					<div class="col-sm-4">
+							<div class="speaker">
+							<div class="photo-wrapper"><a href="./speakers.html#horizontal-tab1"><img class="img-rounded" src="./assets/img/speakers/2019/rachna.JPG" alt="John Doe" class="img-responsive"></a></div>
+							<h3 class="name">Dr. Rachna Arora</h3>
+							<p class="text-alt"><small>Senior Technical Advisor - GIZ</small></p>
+							
+						</div>
+					</div>
+		
+					<div class="col-sm-4">
+						<div class="speaker">
+							<div class="photo-wrapper"><a href="./speakers.html#horizontal-tab2"><img class="img-rounded" src="./assets/img/speakers/2019/preveen.JPG" alt="John Doe" class="img-responsive"></a></div>
+							<h3 class="name">Preveen Pandita</h3>
+							<p class="text-alt"><small>Leading Mentalist</small></p>
+							
+						</div>
+					</div>
+		
+					<div class="col-sm-4">
+						<div class="speaker">
+							<div class="photo-wrapper"><a href="./speakers.html#horizontal-tab3"><img class="img-rounded" src="./assets/img/speakers/2019/shah.jpg" alt="John Doe" class="img-responsive"></a></div>
+							<h3 class="name">Maj. Mohommed Ali Shah</h3>
+							<p class="text-alt"><small>Defence Expert and Analyst</small></p>
+							
+						</div>
+					</div>
+		
+					<div class="col-sm-4">
+						<div class="speaker">
+							<div class="photo-wrapper"><a href="./speakers.html#horizontal-tab4"><img class="img-rounded" src="./assets/img/speakers/2019/soni.jpg" alt="John Doe" class="img-responsive"></a></div>
+							<h3 class="name">Shri Ghanshyam Soni</h3>
+							<p class="text-alt"><small>Deputy Commissioner, Customs Department-Surat</small></p>
+							
+						</div>
+					</div>
+		
+					<div class="col-sm-4">
+						<div class="speaker">
+							<div class="photo-wrapper"><a href="./speakers.html#horizontal-tab5"><img class="img-rounded" src="./assets/img/speakers/2019/pratyush.jpg" alt="John Doe" class="img-responsive"></a></div>
+							<h3 class="name">Pratyush Pillai</h3>
+							<p class="text-alt"><small>Design Strategist, Tinkerlabs </small></p>
+							
+						</div>
+					</div>
+		
+					<div class="col-sm-4">
+						<div class="speaker">
+							<div class="photo-wrapper"><a href="./speakers.html#horizontal-tab6"><img class="img-rounded" src="./assets/img/speakers/2019/jawwad.JPG" alt="John Doe" class="img-responsive"></a></div>
+							<h3 class="name">Jawwad Patel</h3>
+							<p class="text-alt"><small>Innovator</small></p>
+							
+						</div>
+					</div>
+				</div>
 			
-			<div class="panel-group">
-				<div class="panel" style="border: 1px solid red;">
-					<div class="panel-heading" style="height: 20px; background: red;"></div>
-					<div class="panel-body">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-2"><img src="./assets/img/icon/photo.jpg" style="height: width; width: 100%;"></div>
-						<div class="col-sm-6">
-							<h5>Photography</h5>
-							<p>Start Date: 01 Sept, 2019<br>
-							End Date: 13 Oct, 2019</p>
-						</div>
-						<div class="col-sm-3">
-							<div >
-								<br>
-								<div type="button" class="btn disabled" style="background: black; width: 100%;"><a href="#" target="_blank" style="text-decoration: none; color: white;">Closed</a></div><br><br>
-								<div type="button" class="btn hidden" style="background: black; width: 100%;"><a href="https://drive.google.com/open?id=1Z-pAieeCQwgbpZe0eDzhlTdIUbN63teK" target="_blank" style="text-decoration: none; color: white;">Rules</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="panel" style="border: 1px solid red;">
-					<div class="panel-heading" style="height: 20px; background: red;"></div>
-					<div class="panel-body">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-2"><img src="./assets/img/icon/movie.jpg" style="height: width; width: 100%;"></div>
-						<div class="col-sm-6">
-							<h5>Short Film</h5>
-							<p>Start Date: 01 Sept, 2019<br>
-							End Date: 13 Oct, 2019</p>
-						</div>
-						<div class="col-sm-3">
-							<div >
-								<br>
-								<div type="button" class="btn disabled" style="background: black; width: 100%;"><a href="#" target="_blank" style="text-decoration: none; color: white;">Closed</a></div><br><br>
-								<div type="button" class="btn hidden" style="background: black; width: 100%;"><a href="https://drive.google.com/open?id=1Z-pAieeCQwgbpZe0eDzhlTdIUbN63teK" target="_blank" style="text-decoration: none; color: white;">Rules</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="panel" style="border: 1px solid red;">
-					<div class="panel-heading" style="height: 20px; background: red;"></div>
-					<div class="panel-body">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-2"><img src="./assets/img/icon/art.jpg" style="height: width; width: 100%;"></div>
-						<div class="col-sm-6">
-							<h5>Art Competition</h5>
-							<p>Start Date: 01 Sept, 2019<br>
-							End Date: 13 Oct, 2019</p>
-						</div>
-						<div class="col-sm-3">
-							<div >
-								<br>
-								<div type="button" class="btn disabled" style="background: black; width: 100%;"><a href="#" target="_blank" style="text-decoration: none; color: white;">Closed</a></div><br><br>
-								<div type="button" class="btn hidden" style="background: black; width: 100%;"><a href="https://drive.google.com/open?id=1Z-pAieeCQwgbpZe0eDzhlTdIUbN63teK" target="_blank" style="text-decoration: none; color: white;">Rules</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-								
-			</div>
+			
 			
 		</div>
 		
